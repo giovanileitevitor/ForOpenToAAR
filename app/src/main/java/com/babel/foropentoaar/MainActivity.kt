@@ -32,7 +32,9 @@ class MainActivity : AppCompatActivity() {
         binding.fab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG).setAction("Action", null).show()
             val tti2 = Tti2()
-            val userProfile =  UserProfile()
+            val userProfile =  UserProfile(
+                userName = "TestUser"
+            )
         }
     }
 
