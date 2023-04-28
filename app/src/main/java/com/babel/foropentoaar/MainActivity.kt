@@ -8,7 +8,11 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import com.babel.foropentoaar.databinding.ActivityMainBinding
 import com.google.android.material.snackbar.Snackbar
-import com.timwe.init.*
+import com.timwe.init.ScreenCallback
+import com.timwe.init.Tti2
+import com.timwe.init.Tti2Request
+import com.timwe.init.UTM
+import com.timwe.init.UserProfile
 
 
 class MainActivity : AppCompatActivity() {

@@ -42,19 +42,20 @@ android {
         dexInProcess = true
     }
 
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
 }
 
 repositories {
     mavenCentral()
-
-    flatDir {
-        dirs 'aar', 'libs'
-    }
 }
 
 dependencies {
-    implementation fileTree(include: ['*jar'], dir: 'libs')
-    implementation (name: 'tti2sdk-debug', ext: 'aar')
+    implementation (files("libs/tti2sdk-debug.aar"))
 
     implementation "androidx.startup:startup-runtime:1.0.0"
     implementation 'androidx.multidex:multidex:2.0.1'
