@@ -42,14 +42,16 @@ android {
         dexInProcess = true
     }
 
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
 }
 
 repositories {
     mavenCentral()
-
-    flatDir {
-        dirs 'aar', 'libs'
-    }
 }
 
 dependencies {

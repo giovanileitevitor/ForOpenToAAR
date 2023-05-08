@@ -6,8 +6,12 @@ import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.babel.foropentoaar.databinding.ActivityMainBinding
 import com.google.android.material.snackbar.Snackbar
-import com.timwe.init.*
 import com.timwe.tti2sdk.ui.splash.SplashActivity
+import com.timwe.init.ScreenCallback
+import com.timwe.init.Tti2
+import com.timwe.init.Tti2Request
+import com.timwe.init.UTM
+import com.timwe.init.UserProfile
 
 
 class MainActivity : AppCompatActivity() {
